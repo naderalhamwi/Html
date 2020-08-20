@@ -1,0 +1,12 @@
+td:hover{
+    color: rgb(219, 122, 52);
+}
+p{
+    padding:1%;
+    &:hover{
+        color: rgb(52, 186, 219);
+    }
+}
+main{
+    padding: 1%;
+}

@@ -1,0 +1,16 @@
+td:hover {
+  color: #db7a34;
+}
+
+p {
+  padding: 1%;
+}
+
+p:hover {
+  color: #34badb;
+}
+
+main {
+  padding: 1%;
+}
+/*# sourceMappingURL=style.css.map */

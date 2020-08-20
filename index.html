@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bulma.css">   
+    <link rel="stylesheet" href="bulma.css"> 
+    <link rel="stylesheet" href="style.css">  
     <title>test</title>
 </head>
 <body>
-    <header class="container is-size-4 has-text-centered">
-        Webbutvekling
+    <header class="container is-size-2 has-text-centered level-left">
+        <p>Webbutvekling</p>
     </header>
-    <nav class="container">
-        <ul class="navbar">
-            <li class="navbar-item"><a href="#">meny1</a></li>
-            <li class="navbar-item"><a href="#">meny2</a></li>
-        </ul>
-    </nav>
     <main class="container">
-        <table class="table is-bordered">
+        <table class="table is-striped is-bordered has-text-centered">
             <tr>
-                <td>1</td>
-                <td>2</td>
-            </tr> <tr>
-                <td>3</td>
-                <td>4</td>
+                <td id="fname1"></td>
+                <td id="lname1"></td>
+                <td id="age1"></td>
             </tr>
+            <tr>
+                <td id="fname2"></td>
+                <td id="lname2"></td>
+                <td id="age2"></td>
+            </tr>  
+            <tr>
+                <td id="fname3"></td>
+                <td id="lname3"></td>
+                <td id="age3"></td>
+            </tr>  
         </table>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
