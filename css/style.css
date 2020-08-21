@@ -1,0 +1,32 @@
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+td:hover {
+  color: #34badb;
+}
+
+p {
+  padding: 1%;
+}
+
+p:hover {
+  color: #34badb;
+}
+
+main {
+  padding: 1%;
+}
+
+.text-input {
+  display: inline-block;
+}
+
+.line {
+  background-color: black;
+  height: 1px;
+}
+/*# sourceMappingURL=style.css.map */

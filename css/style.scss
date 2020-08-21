@@ -1,0 +1,22 @@
+body{
+    user-select: none;
+}
+td:hover{
+    color: rgb(52, 186, 219);
+}
+p{
+    padding:1%;
+    &:hover{
+        color: rgb(52, 186, 219);
+    }
+}
+main{
+    padding: 1%;
+}
+.text-input{
+    display: inline-block;
+}
+.line{
+    background-color: black;
+    height: 1px;
+}
