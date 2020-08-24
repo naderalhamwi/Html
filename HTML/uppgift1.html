@@ -34,7 +34,7 @@
         </div>
         <button class="button is-info mb-5 mt-5 is-rounded Nbutton">submit</button>
         -->
-        <table class="table is-striped is-bordered has-text-centered">
+        <table class="table is-striped is-bordered has-text-centered" id="myTable">
             <tr>
                 <td id="fname1"></td>
                 <td id="lname1"></td>
@@ -51,6 +51,19 @@
                 <td id="age3"></td>
             </tr>  
         </table>
+        
+        <form action="/action_page.php">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+          <label for="lname">Your Age:</label>
+          <input type="text" id="lname" name="Age"><br><br>
+          <input type="submit" value="Submit"><br><br>
+        </form>
+
+        <button onclick="intext()">Set</button>
+        <button onclick="Uttext()">Remove</button>
 
     </main>
     
