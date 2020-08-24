@@ -24,15 +24,15 @@ let text = document.getElementById("text");
 
 
 function intext (){
+   
    var table = document.getElementById("myTable");
 
-   let Fname = document.getElementById("fname").value;
-   let Lname = document.getElementById("lnale").value;
-   let Age = document.getElementById("Age").value;
+   var Fname = document.getElementById("Fname").value;
+   var Lname = document.getElementById("Lname").value;
+   var Age = document.getElementById("Age").value;
 
    var row = table.insertRow(0);
-   var row = table.inserlRow(0);
-   var row = table.inserAge(0);
+
    var cell1 = row.insertCell(0);
    var cell2 = row.insertCell(1);
    var cell3 = row.insertCell(2);
@@ -40,8 +40,11 @@ function intext (){
    cell1.innerHTML = Fname;
    cell2.innerHTML = Lname;
    cell3.innerHTML = Age;
-}
 
+   var Fname = document.getElementById("Fname").value = "";
+   var Lname = document.getElementById("Lname").value = "";
+   var Age = document.getElementById("Age").value = "";
+}
 
 function Uttext(){
   document.getElementById("myTable").deleteRow(0);
