@@ -1,0 +1,33 @@
+body {
+  user-select: none;
+}
+
+.text-input {
+  display: inline-block;
+}
+
+.line {
+  background-color: black;
+  height: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: #62a3ce;
+  transition: all 0.5s ease;
+}
+a:hover {
+  color: #0099ff;
+}
+
+.Nbutton {
+  width: 13rem;
+}
+
+.fab {
+  transition: all 0.5s ease;
+}
+
+.fab:hover {
+  color: #0099ff;
+}

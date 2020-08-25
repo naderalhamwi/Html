@@ -23,7 +23,7 @@ function doCalculation() {
   area1 = length * width;
   resultatElement.innerHTML = "<p>Rektangelens area blir " + area1 + "m<sup>2</sup>.</p>";
   resultatElement.innerHTML += "<p>Eclipsen area blir " + 3.14159 * area1 / 4 + "m<sup>2</sup>.</p>";
-  resultatElement.innerHTML += "<p>triangel area blir " + area1 * 1 / 2 + "m<sup>2</sup>.</p>"; //triangel area
+  resultatElement.innerHTML += "<p>triangel area blir " + area1 * 1 / 2 + " fot.</p>"; //triangel area
 
   resultatElement.innerHTML += "<p>Längden " + length + " meter blir: </p>";
   distance = length / conv[0] * 100;
@@ -32,11 +32,4 @@ function doCalculation() {
   resultatElement.innerHTML += "<p>" + distance + " " + unit[1] + "</p>";
   distance = length / conv[2] * 100;
   resultatElement.innerHTML += "<p>" + distance + " " + unit[2] + "</p>";
-  var txt = "";
-  conv.forEach(myFunction);
-  document.getElementById("demo").innerHTML = txt;
-
-  function myFunction(value, index, array) {
-    txt = txt + +"<br>";
-  }
 }
