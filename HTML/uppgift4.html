@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Uppgift 4 - Variabler och beräkningar</title>
+	<link rel="stylesheet" type="text/css" href="/css/bulma.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+	<script type="text/javascript" src="/JavaScript/uppgift4.js"></script>
+</head class="container box">
+
+<body class="container box">
+
+    <header class="container is-size-2 has-text-centered level-left">
+		<a href="Home.html">Webbutvekling 2</a>
+	  </header>
+	
+	<div class="line"></div>
+	
+	<main class="mt-5">
+		<h2 class="mb-4 mt-4 is-size-3">Beräkning av area och längder:</h2>
+		<img src="/img/shapes.png" alt="Form för rektangel, ellips och triangel">
+		<p class="is-size-4 mb-3">Ange längd och bredd för ytan:</p>
+
+		<form id="inputForm"> <!-- Textfält för att ge indata -->
+			<label for="input1" >Längd:</label><p class=" mb-5"><input type="text" id="input1" > meter</p>
+			<label for="input2" >Bredd:</label><p class=" mb-5"><input type="text" id="input2" > meter</p>
+			<button type="button" id="runBtn" class="button is-success">Kör programmet</button>
+		</form>
+
+		<hr>
+		<p class="is-size-4">Resultat:</p>
+		<section id="result"></section> <!-- Resultatet av programmet ska skrivas i detta div-element. -->
+		<hr>
+	</main>
+</body>
+</html>

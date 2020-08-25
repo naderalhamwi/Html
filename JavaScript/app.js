@@ -24,22 +24,22 @@ let text = document.getElementById("text");
 
 
 function intext (){
-   
+
    var table = document.getElementById("myTable");
 
    var Fname = document.getElementById("Fname").value;
    var Lname = document.getElementById("Lname").value;
    var Age = document.getElementById("Age").value;
 
-   var row = table.insertRow(0);
+      var row = table.insertRow(0);
 
-   var cell1 = row.insertCell(0);
-   var cell2 = row.insertCell(1);
-   var cell3 = row.insertCell(2);
-
-   cell1.innerHTML = Fname;
-   cell2.innerHTML = Lname;
-   cell3.innerHTML = Age;
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      var cell3 = row.insertCell(2);
+   
+      cell1.innerHTML = Fname;
+      cell2.innerHTML = Lname;
+      cell3.innerHTML = Age;
 
    var Fname = document.getElementById("Fname").value = "";
    var Lname = document.getElementById("Lname").value = "";
