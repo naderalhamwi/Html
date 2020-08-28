@@ -72,3 +72,10 @@ function doCalculation() {
   input1Element.value = "";
   input2Element.value = "";
 }
+/** 
+ * arry lägg till .push("text");
+ * Math.round(math.random()*10);
+ * windwo.clarinterval();
+ * 
+ * 
+*/
