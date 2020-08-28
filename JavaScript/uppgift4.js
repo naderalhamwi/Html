@@ -51,8 +51,8 @@ function palindrome() {
     else {
         alert(text + " är inte palindrome");
     }
-
     Ptext.value = "" ;
+
 }
 
 function doCalculation(){
