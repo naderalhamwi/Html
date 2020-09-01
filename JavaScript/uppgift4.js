@@ -1,6 +1,7 @@
 let num1, num2, Ptext;
 let input1Element, input2Element, resultatElement;
 
+
 function init(){
     num1 = document.getElementById("num1");
     num2 = document.getElementById("num2");
@@ -15,6 +16,10 @@ function init(){
     input2Element = document.getElementById("input2");
     resultatElement = document.getElementById("result");
     document.getElementById("runBtn").onclick = doCalculation;
+    
+    
+    document.getElementById("smile").style.display  = "none";
+    document.getElementById("tired").style.display  = "none";
 }
 window.onload = init;
 
@@ -43,16 +48,47 @@ function kvadrera(){
 }
 
 function palindrome() {
+
     let text = Ptext.value;
+    let reg = /[^A-Za-z0-9]/g;
+
+    //omvandla alla stora bokstäver till små och tar bort mellanslag
+    text = text.toLowerCase().replace(reg,'');
 
     if (text == text.split('').reverse().join('')) {
         alert(text + " är palindrome");
+        document.getElementById("smile").style.display  = "flex";
+        document.getElementById("palindrome").style.backgroundColor  = "green";
     }
     else {
         alert(text + " är inte palindrome");
+        document.getElementById("tired").style.display  = "flex";
+        document.getElementById("palindrome").style.backgroundColor  = "red";
     }
+
     Ptext.value = "" ;
 
+}
+
+
+function palindromeT(){
+    // for lop for att kolla om den första lika med den sista 
+    // sista index (length -1 -i)
+    // let len = str.length;
+
+    //rekosiv function ; som ropas stjälv ex:
+    /**
+     * function p (tex, start, slut){'
+        * if(start < slut){
+            * if(text[start] == text[slut]){
+            *   (start+1, slut-1);
+            * }else{
+            *   return false;
+            * }
+            * return true;
+        * }
+     * }
+     */
 }
 
 function doCalculation(){
@@ -88,7 +124,6 @@ function doCalculation(){
     input1Element.value = "";
     input2Element.value = "";
 }
-
 
 
 /** 

@@ -1,0 +1,102 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main {
+  width: 870px;
+  height: 970px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .buttonV {
+  margin-top: 6rem;
+  position: absolute;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .buttonV button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+  display: inline-block;
+}
+
+body main .buttonV #tic:hover {
+  width: 200px;
+  background-color: springgreen;
+}
+
+body main .buttonV #tac:hover {
+  width: 200px;
+  background-color: tomato;
+}
+
+body main #sliderBottom {
+  z-index: 1;
+  width: 870px;
+  height: 310px;
+  position: absolute;
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease;
+  background-color: white;
+}
+
+body main .playGround {
+  margin: 50% 10% 10% 10%;
+}
+
+body main .playGround .gamecontainer {
+  display: -ms-grid;
+  display: grid;
+  margin: 50px auto;
+  -webkit-box-shadow: 0px 5px 10px black;
+          box-shadow: 0px 5px 10px black;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+}
+
+body main .playGround .gamecontainer .cell {
+  border: 1px solid #393939;
+  background-color: steelblue;
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .playGround .gamecontainer .cell:hover {
+  border: none;
+  -webkit-box-shadow: 0px 0px 10px;
+          box-shadow: 0px 0px 10px;
+}
+/*# sourceMappingURL=tic-tac-toe.css.map */

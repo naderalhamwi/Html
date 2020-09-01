@@ -3,6 +3,7 @@
 // Globala variabler
 let inputElem, msgElem;
 let fruitNames, fruitNr;
+let selFruitsElem;
 
 
 // Funktion som körs då hela webbsidan är inladdad, dvs då all HTML-kod är utförd.
@@ -16,15 +17,10 @@ function init() {
     inputElem[2] = document.getElementById("input2");
     inputElem[3] = document.getElementById("input3");
 
-    fruitNames = [];
-    fruitNr[0]= "ingen frukt";
-    fruitNr[1]= "äple";
-    fruitNr[2]= "banan";
-    fruitNr[3]= "citron";
-    fruitNr[4]= "fruit4";
-    fruitNr[5]= "päron";
+    fruitNames = ["ingen frukt", "äpple", "banan", "citron", "apelsin", "päron"];
 
     msgElem = document.getElementById("message");
+    selFruitsElem = document.getElementById("selectedFruits");
     
 } // End init
 window.onload = init; // Se till att init aktiveras då sidan är inladdad
@@ -56,19 +52,13 @@ function showfrukt(){
 function KontrolleraFNamn(){
     let name;
     name = inputElem[2].value;
-
-    console.log(name);
-    console.log(fruitNr);
-
+    if(name == ""){
+        msgElem.innerHTML = "<p>"+ "välja en frukt först" +"</p>" ;
+        return;
+    }
     if(name == fruitNames[fruitNr]){
         msgElem.innerHTML = "<p>"+ "Rätt namn" +"</p>" ;
     }else{
         msgElem.innerHTML = "<p>"+ "Fel Namn" +"</p>" ;
     }
 }
-
-/**
- * hämta från fil
- * "imt/pics/frukt1.jpg"
- * 
-*/

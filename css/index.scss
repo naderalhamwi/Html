@@ -64,14 +64,13 @@ main{
             padding: 1em;
             background-color: #393939;
             h3{
-                color: dodgerblue;
+                color: #1e90ff;
                 background-color: transparent;
                 font-size: 30px;
             }
             a{
                 color: snow;
                 font-size: 20px;
-                cursor: default;
             }
         }
     }
@@ -114,4 +113,13 @@ main{
 }   
 .fa{
     color: chocolate !important;
+}
+
+
+
+@media screen and (max-width:400px) {
+
+}
+@media screen and (max-width:800px) {
+
 }

@@ -96,7 +96,7 @@ main div:hover {
 }
 
 main div:hover h3 {
-  color: dodgerblue;
+  color: #1e90ff;
   background-color: transparent;
   font-size: 30px;
 }
@@ -104,7 +104,6 @@ main div:hover h3 {
 main div:hover a {
   color: snow;
   font-size: 20px;
-  cursor: default;
 }
 
 .information {
@@ -154,4 +153,4 @@ main div:hover a {
 .fa {
   color: chocolate !important;
 }
-/*# sourceMappingURL=Shared.css.map */
+/*# sourceMappingURL=index.css.map */

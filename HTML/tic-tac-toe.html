@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tic-tac-toe.css">
+	<script type="text/javascript" src="/JavaScript/tic-tac-toe.js"></script>
+	<script type="text/javascript" src="/JavaScript/tic-tac-toe-Functions.js"></script>
+    <title>tic-tac-toe</title>
+</head>
+<body>
+    <main id="main">
+        <div class="buttonV">
+            <button id="tic" onclick="playerX()">X</button>
+            <button id="tac" onclick="playerO()">O</button>
+        </div>
+        <div id="sliderBottom"></div>
+
+        <div id="playGround" class="playGround">
+            <div class="gamecontainer">
+                <button id="Cell1" Class="cell" onclick="B1()"></button>
+                <button id="Cell2" Class="cell" onclick="B2()"></button>
+                <button id="Cell3" Class="cell" onclick="B3()"></button>
+                <button id="Cell4" Class="cell" onclick="B4()"></button>
+                <button id="Cell5" Class="cell" onclick="B5()"></button>
+                <button id="Cell6" Class="cell" onclick="B6()"></button>
+                <button id="Cell7" Class="cell" onclick="B7()"></button>
+                <button id="Cell8" Class="cell" onclick="B8()"></button>
+                <button id="Cell9" Class="cell" onclick="B9()"></button>
+             </div>
+        </div>
+    </main>
+</body>
+</html>
+
+
+<!--
+    slider ska gå upp när man har väljat en spelare
+        ska gå ner när man har slutat 
+        den ska vara grön om man vinner med text
+        röd om man förlurar med text
+
+        det kommer inte finnas något mella divar
+-->
