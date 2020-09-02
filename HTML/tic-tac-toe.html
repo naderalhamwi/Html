@@ -10,10 +10,11 @@
 </head>
 <body>
     <main id="main">
-        <h1>Välja en spelare:</h1>
+        <a href="Index.html" id="linkHome">Webbutvekling 2</a>
+        <h1>( Tic-Tac-Toe )</h1>
         <div class="buttonV">
-            <button id="tic" onclick="playerX()">1</button>
-            <button id="tac" onclick="playerO()">2</button>
+            <button id="tic" onclick="playerX()">Player 1</button>
+            <button id="tac" onclick="playerO()">Player 2</button>
         </div>
         <div id="sliderBottom"></div>
 
@@ -30,16 +31,7 @@
                 <button id="Cell9" Class="cell" onclick="B9()"></button>
              </div>
         </div>
+        <button id="reset" onclick="reset()">RESTART</button>
     </main>
 </body>
 </html>
-
-
-<!--
-    slider ska gå upp när man har väljat en spelare
-        ska gå ner när man har slutat 
-        den ska vara grön om man vinner med text
-        röd om man förlurar med text
-
-        det kommer inte finnas något mella divar
--->

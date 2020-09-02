@@ -27,16 +27,26 @@ body main {
           justify-content: center;
 }
 
+body main a {
+  top: 3%;
+  left: 50%;
+  font-size: 3rem;
+  color: #ff0066;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 body main h1 {
   left: 50%;
-  top: 5%;
+  top: 7%;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
 body main .buttonV {
-  margin-top: 6rem;
+  margin-top: 7rem;
   position: absolute;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -48,13 +58,14 @@ body main .buttonV button {
   height: 50px;
   border: none;
   color: black;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
   text-align: center;
   display: inline-block;
 }
 
 body main .buttonV #tic:hover {
+  border-radius: 10px 0 0 10px;
   width: 200px;
   background-color: #ff1aff;
   color: white;
@@ -62,6 +73,7 @@ body main .buttonV #tic:hover {
 }
 
 body main .buttonV #tac:hover {
+  border-radius: 0 10px  10px 0;
   width: 200px;
   background-color: #3d0099;
   color: white;
@@ -122,5 +134,27 @@ body main .playGround .gamecontainer .cell:hover {
   border: none;
   -webkit-box-shadow: 0px 0px 10px;
           box-shadow: 0px 0px 10px;
+}
+
+body main #reset {
+  left: 50%;
+  top: 80%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: none;
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+  display: inline-block;
+}
+
+body main #reset:hover {
+  background-color: #ffff00;
+  width: 200px;
 }
 /*# sourceMappingURL=tic-tac-toe.css.map */
