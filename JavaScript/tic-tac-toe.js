@@ -48,13 +48,19 @@ function reset(){
 
 
 function playerX(){
+    if(A != 1 && J == 9){
+        document.getElementById("reset").style.opacity = "1";
+    }else{
+        checWin();
+    }
+
     player = 1;
 
     document.getElementById("sliderBottom").style.color = "white";
     document.getElementById("main").style.backgroundColor = "#393939";
     document.getElementById("sliderBottom").style.backgroundColor = purble;
     
-    document.getElementById("sliderBottom").innerHTML = "<h1>" + "Player 1" + "</h1>";
+    document.getElementById("sliderBottom").innerHTML = "<h1>" + "X" + "</h1>";
     
     document.getElementById("playGround").style.display = "block";
     document.getElementById("sliderBottom").style.height = "310px";
@@ -72,7 +78,11 @@ function playerX(){
 }
 
 function playerO(){
-    checWin();
+    if(A != 1 && J == 9){
+        document.getElementById("reset").style.opacity = "1";
+    }else{
+        checWin();
+    }
     player = 2;
 
     document.getElementById("sliderBottom").style.color = "white";
@@ -80,7 +90,7 @@ function playerO(){
     document.getElementById("sliderBottom").style.backgroundColor = darkpurple;
     document.getElementById("sliderBottom").style.boxShadow = "0px 5px 10px black";
     
-    document.getElementById("sliderBottom").innerHTML = "<h1>" + "Player 2" + "</h1>";
+    document.getElementById("sliderBottom").innerHTML = "<h1>" + "O" + "</h1>";
     
     document.getElementById("main").style.transition = "all 1s";
     document.getElementById("sliderBottom").style.transition = "all 1.5s";
@@ -94,12 +104,4 @@ function playerO(){
     document.getElementById("sliderBottom").style.pointerEvents = "none";
 
     document.getElementById("linkHome").style.pointerEvents = "none";
-
 }
- setInterval(function(){
-    if(A != 1 && J == 9){
-        document.getElementById("reset").style.opacity = "1";
-    }else{
-        checWin();
-    }
-}, 1000)

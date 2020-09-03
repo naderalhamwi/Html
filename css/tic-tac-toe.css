@@ -62,6 +62,7 @@ body main .buttonV button {
   transition: 0.3s ease-out;
   text-align: center;
   display: inline-block;
+  background-color: white;
 }
 
 body main .buttonV #tic:hover {
@@ -156,5 +157,7 @@ body main #reset {
 body main #reset:hover {
   background-color: #ffff00;
   width: 200px;
+  font-size: 20px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=tic-tac-toe.css.map */
