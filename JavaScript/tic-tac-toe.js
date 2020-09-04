@@ -37,7 +37,7 @@ function init(){
     document.getElementById("sliderBottom").style.opacity = "1";
     document.getElementById("playGround").style.display = "none";
 
-    document.getElementById("sliderBottom").style.height = "660px";
+    document.getElementById("sliderBottom").style.height = "330px";
     document.getElementById("sliderBottom").style.marginTop = "310px";
 }
 window.onload = init;
