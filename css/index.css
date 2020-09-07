@@ -28,20 +28,6 @@ header h1 {
   color: chocolate;
 }
 
-header i {
-  margin: auto;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-header i:hover {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
 main {
   top: 10%;
   right: 2%;

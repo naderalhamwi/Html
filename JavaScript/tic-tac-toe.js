@@ -48,7 +48,7 @@ function reset(){
 
 
 function playerX(){
-    if(A != 1 && J == 9){
+    if(A != 1 && J == 9 || J >= 10){
         document.getElementById("reset").style.opacity = "1";
     }else{
         checWin();
@@ -78,7 +78,7 @@ function playerX(){
 }
 
 function playerO(){
-    if(A != 1 && J == 9){
+    if(A != 1 && J == 9 || J >= 10){
         document.getElementById("reset").style.opacity = "1";
     }else{
         checWin();

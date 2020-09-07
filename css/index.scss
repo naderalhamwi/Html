@@ -15,14 +15,6 @@ header{
         grid-column: 2/3;
         color: chocolate;
     }
-    i{
-        margin: auto;
-        grid-column: 3/4;
-        transition: all 0.5s ease;
-        &:hover{
-            transform: rotate(90deg);
-        }
-    }
 }
 main{
     top: 10%;
@@ -118,10 +110,11 @@ main{
 }
 
 
-
 @media screen and (max-width:400px) {
 
 }
 @media screen and (max-width:800px) {
 
 }
+
+
