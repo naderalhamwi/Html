@@ -4,36 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/index.css">
-    <script src="https://kit.fontawesome.com/de05059076.js" crossorigin="anonymous"></script>
     <title>Home</title>
+    <script src="https://kit.fontawesome.com/de05059076.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <h1>Nader Alhamwi</h1>
-        <p>menu</p>
-    </header>
-    <main>
-        <div class="news"> 
-            <h1>news</h1>
-            <i class="fas fa-chevron-double-down"></i>
-        </div>
-        <div class="projeckt">
-            <h1>projeckt</h1>
-            <i class="fas fa-chevron-double-down"></i>
-        </div>
-        <div class="socialinks">
-            <h1>socialinks</h1>
-            <i class="fas fa-chevron-double-down"></i>
-        </div>
-        <div class="aboutme">
-            <h1>aboutme</h1>
-            <i class="fas fa-chevron-double-down"></i>
-        </div>
-        <div class="contactme">
-            <h1>contactme</h1>
-            <i class="fad fa-chevron-double-up"></i>
-        </div>
-    </main>
-    <footer></footer>
+    <div class="parent">
+        <section class="one" id ="one">
+            <h1>Nader Alhamwi</h1>
+            <i class="fas fa-chevron-down fa-3x"></i>
+        </section>
+        <section class="two" id="two">
+            <h2>My projekts</h2>
+            <div></div>
+           <i class="fas fa-chevron-down fa-3x"></i>
+        </section>
+        <section class="thre" id="tre">
+            <h2>My social links</h2>
+            <div>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instgram</li>
+                    <li>grihub</li>
+                </ul>
+            </div>
+           <i class="fas fa-chevron-down fa-3x"></i>
+        </section>
+        <section class="four" id="four">
+            <h2>Aboute me</h2>
+            <i class="fas fa-chevron-down fa-3x"></i>
+        </section>
+        <section class="five" id="five">
+            <h2>Contact me</h2>
+            <div class="container">
+                <form>
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                  <label for="E-mail">E-mail</label>
+                  <input type="text" id="E-mail" name="E-mail" placeholder="Your E-mail">
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+              
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+           <i class="fas fa-chevron-up fa-3x"></i>
+           <style>
+
+                input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border-radius: 4px;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                border: none;
+                resize: none;
+                transition: all 0.4s ease-in-out;
+                background-color: whitesmoke;
+                color: black;
+                font-style: oblique;
+                }
+                textarea{
+                    height: 100px;
+                }
+
+                input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                }
+
+
+                input[type=submit]:hover {
+                background-color: #45a049;
+                }
+
+                input:focus, textarea:focus{
+                   outline: none;
+                  box-shadow: 0px 5px 5px #45a049;
+                    background-color: rgb(102, 102, 102);
+                    color: white;
+                }
+                form{
+                    margin: auto;
+                }
+                .container {
+                width: 75%;
+                display: flex;
+                color: white;
+                border-radius: 5px;
+                justify-self: center;
+                justify-content: center;
+                border: none;
+                }
+           </style>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+    <script src="JavaScript/index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>

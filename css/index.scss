@@ -1,63 +1,101 @@
 *{
     padding: 0%;
     margin: 0%;
+    user-select: none;
 }
-html{
-    height: 1080px;
-    body{
-        height: 1080px;
-    }
-}
-header{
-    display: grid;
-    padding: 0%;
-    margin: 0%;
-    grid-template-columns: auto auto auto auto; 
-    background-color: #222222;
-    color: white;
-    h1{
-    padding: 0%;
-    margin: 1% 0% 1% 5% ;
-    justify-content: left;
-    display: flex;
-    }
-    p{
-    padding: 0%;
-    margin: 5%;
-    display: flex;
-    justify-content: center;
-    grid-column: 4/5;
-    }
-}
-main{
-    div{
-        padding: 0%;
-        margin: 0%;
-    }
-    .news{
-        background-color: antiquewhite;
+html, body{
         height: 100%;
+}
+.parent {
+    overflow: scroll;
+    height: 100%;
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    &::-webkit-scrollbar {display: none;}
+    
+  }
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+    display: grid;
+    i{
+        margin: auto;
+        color: white;
+        border-radius: 20% 20% 20% 20% ;
     }
-    .projeckt{
-        background-color: tomato;
-
-    } 
-    .socialinks{
-        background-color: dodgerblue;
-        
-    } 
-    .aboutme{
-        background-color: green;
-
+    h1{
+        display: flex;
+        font-size: 150px;
+        justify-content: center;
+        margin: auto;
+        color: white;
+        font-family: "Dancing Script", cursive;
+        text-shadow: 5px 5px 5px black;
+        opacity: 0;
     }
-    .contactme{
-        background-color: fuchsia;
-        
+    h2{
+        margin: auto;
+        margin-top: 3%;
+        font-size: 50px;
+        color: whitesmoke;
+        font-family: "Dancing Script", cursive;
+        text-shadow: 5px 5px 5px black;
     }
 }
-footer{
-    padding: 0%;
-    margin: 0%;
-    background-color: #222222;
-    height: 150px;
+.one {
+    grid-template-rows: auto 100px;
+}
+.two {
+    grid-template-rows: 150px auto 100px;
+    div{
+        display: flex;
+        box-shadow: 0px 5px 5px black;
+        width: 80%;
+        background-color: black;
+        justify-self: center;
+        transition: all 0.3s ease;
+    }
+}
+.thre {
+    grid-template-rows: 150px auto 100px;
+    div{
+        ul{
+            align-items: center; 
+            display: flex; 
+            justify-content: space-between;
+            list-style: none;
+            padding: 0rem 10rem;
+            li{
+                display: inline-block;
+                border: solid 1px white;
+                top: auto;
+                width: 100%;
+                margin: 5px;
+                height: 100px;
+                color: white;
+                text-align: center;
+                transition: all 0.3s ease ;
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+.four {
+    grid-template-rows: auto 100px;
+}
+.five {
+    grid-template-rows: 150px auto 100px;
+}
+
+@media only screen and (max-width: 850px) {
+   section{
+       h1{
+           font-size: 75px;
+       }
+   }
 }
