@@ -24,12 +24,15 @@ section {
         margin: auto;
         color: white;
         border-radius: 20% 20% 20% 20% ;
+        color: #7fff00;
     }
     h1{
         display: flex;
         font-size: 150px;
         justify-content: center;
         margin: auto;
+        margin-left: 50%;
+        margin-top: 5%;
         color: white;
         font-family: "Dancing Script", cursive;
         text-shadow: 5px 5px 5px black;
@@ -46,6 +49,14 @@ section {
 }
 .one {
     grid-template-rows: auto 100px;
+    .arow{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        i{
+            position: absolute;
+        }
+    }
 }
 .two {
     grid-template-rows: 150px auto 100px;
@@ -53,9 +64,17 @@ section {
         display: flex;
         box-shadow: 0px 5px 5px black;
         width: 80%;
-        background-color: black;
         justify-self: center;
         transition: all 0.3s ease;
+    }
+    .arow{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        background-color: none;
+        i{
+            position: absolute;
+        }
     }
 }
 .thre {
@@ -70,32 +89,124 @@ section {
             align-items: center; 
             justify-content: space-between;
             li{
-                display: inline-block;
-                top: auto;
-                width: 100%;
-                margin: 10px;
-                color: white;
-                text-align: center;
-                transition: all 0.3s ease ;
-                &:hover{
-                    background-color: white;
-                    color: black;
+                i{
+                    display: inline-block;
+                    top: auto;
+                    width: 100%;
+                    margin: 10px;
+                    color: white;
+                    text-align: center;
+                    transition: all 0.3s ease ;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                    }
                 }
             }
+        }
+    }
+    .arow{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        i{
+            position: absolute;
         }
     }
 }
 .four {
     grid-template-rows: auto 100px;
+    .arow{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        i{
+            position: absolute;
+        }
+    }
 }
 .five {
     grid-template-rows: 150px auto 100px;
+    
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 4px;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        border: none;
+        resize: none;
+        transition: all 0.4s ease-in-out;
+        background-color: whitesmoke;
+        color: black;
+        font-style: oblique;
+        }
+        textarea{
+            height: 100px;
+        }
+
+        input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+
+        input[type=submit]:hover {
+        background-color: #45a049;
+        }
+
+        input:focus, textarea:focus{
+           outline: none;
+          box-shadow: 0px 5px 5px #45a049;
+            background-color: rgb(102, 102, 102);
+            color: white;
+        }
+        form{
+            margin: auto;
+        }
+        .container {
+        width: 75%;
+        display: flex;
+        color: white;
+        border-radius: 5px;
+        justify-self: center;
+        justify-content: center;
+        border: none;
+        }
+        
+    .arow{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        i{
+            position: absolute;
+        }
+    }
 }
 
 @media only screen and (max-width: 850px) {
-   section{
-       h1{
-           font-size: 70px;
-       }
-   }
+    .parent{
+        .fa-chevron-down{
+            display: none;
+        }
+        h1{
+            font-size: 70px;
+        }
+        section{
+            display: flex;
+        }
+        form{
+            display: none;
+        }
+        div{
+            display: none;
+        }
+    }
+    .parent section{
+        height: 20%;
+    }
 }
