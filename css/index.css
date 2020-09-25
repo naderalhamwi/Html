@@ -43,25 +43,15 @@ section i {
 
 section h1 {
   opacity: 0;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: white;
   font-size: 150px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-<<<<<<< Updated upstream
-  margin: auto;
   margin-left: 50%;
   margin-top: 5%;
-  color: white;
   font-family: "Dancing Script", cursive;
-=======
->>>>>>> Stashed changes
   text-shadow: 5px 5px 5px black;
-  font-family: "Dancing Script", cursive;
 }
 
 section h2 {
@@ -99,14 +89,10 @@ section h2 {
 
 .two div {
   width: 80%;
-<<<<<<< Updated upstream
-  justify-self: center;
-=======
   display: block;
   -ms-grid-column-align: center;
       justify-self: center;
   background-color: black;
->>>>>>> Stashed changes
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-box-shadow: 0px 5px 5px black;
@@ -164,33 +150,35 @@ section h2 {
           justify-content: space-between;
 }
 
-<<<<<<< Updated upstream
 .thre div ul li i {
   display: inline-block;
-=======
-.thre div ul li {
->>>>>>> Stashed changes
+  top: auto;
+  width: 100%;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   top: auto;
   width: 100%;
   margin: 10px;
   color: white;
   text-align: center;
   display: inline-block;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-<<<<<<< Updated upstream
 .thre div ul li i:hover {
   background-color: white;
-=======
-.thre div ul li:hover {
->>>>>>> Stashed changes
+  color: black;
+}
+
+.thre div ul li i:hover {
   color: black;
   background-color: white;
 }
 
-.thre .arow {
+.thre div .arow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,16 +188,16 @@ section h2 {
   justify-items: center;
 }
 
-.thre .arow i {
+.thre div .arow i {
   position: absolute;
 }
 
-.four {
+.thre .four {
   -ms-grid-rows: auto 100px;
       grid-template-rows: auto 100px;
 }
 
-.four .arow {
+.thre .four .arow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,20 +207,16 @@ section h2 {
   justify-items: center;
 }
 
-.four .arow i {
+.thre .four .arow i {
   position: absolute;
 }
 
-.five {
+.thre .five {
   -ms-grid-rows: 150px auto 100px;
       grid-template-rows: 150px auto 100px;
 }
 
-<<<<<<< Updated upstream
-.five input[type=text], .five select, .five textarea {
-=======
-input[type=text], select, textarea {
->>>>>>> Stashed changes
+.thre .five input[type=text], .thre .five select, .thre .five textarea {
   width: 100%;
   padding: 12px;
   border-radius: 4px;
@@ -247,19 +231,11 @@ input[type=text], select, textarea {
   font-style: oblique;
 }
 
-<<<<<<< Updated upstream
-.five textarea {
+.thre .five textarea {
   height: 100px;
 }
 
-.five input[type=submit] {
-=======
-textarea {
-  height: 100px;
-}
-
-input[type=submit] {
->>>>>>> Stashed changes
+.thre .five input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -268,19 +244,11 @@ input[type=submit] {
   cursor: pointer;
 }
 
-<<<<<<< Updated upstream
-.five input[type=submit]:hover {
+.thre .five input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.five input:focus, .five textarea:focus {
-=======
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-input:focus, textarea:focus {
->>>>>>> Stashed changes
+.thre .five input:focus, .thre .five textarea:focus {
   outline: none;
   -webkit-box-shadow: 0px 5px 5px #45a049;
           box-shadow: 0px 5px 5px #45a049;
@@ -288,19 +256,11 @@ input:focus, textarea:focus {
   color: white;
 }
 
-<<<<<<< Updated upstream
-.five form {
+.thre .five form {
   margin: auto;
 }
 
-.five .container {
-=======
-form {
-  margin: auto;
-}
-
-.container {
->>>>>>> Stashed changes
+.thre .five .container {
   width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,8 +274,7 @@ form {
   border: none;
 }
 
-<<<<<<< Updated upstream
-.five .arow {
+.thre .five .arow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,12 +284,68 @@ form {
   justify-items: center;
 }
 
-.five .arow i {
+.thre .five .arow i {
   position: absolute;
 }
 
-=======
->>>>>>> Stashed changes
+.thre input[type=text], .thre select, .thre textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border: none;
+  resize: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-color: whitesmoke;
+  color: black;
+  font-style: oblique;
+}
+
+.thre textarea {
+  height: 100px;
+}
+
+.thre input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.thre input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.thre input:focus, .thre textarea:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 5px 5px #45a049;
+          box-shadow: 0px 5px 5px #45a049;
+  background-color: #666666;
+  color: white;
+}
+
+.thre form {
+  margin: auto;
+}
+
+.thre .container {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  border-radius: 5px;
+  justify-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+
 @media only screen and (max-width: 850px) {
   .parent .fa-chevron-down {
     display: none;

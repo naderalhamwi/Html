@@ -19,6 +19,7 @@ var Recept = {
          "salt": "63 g"
         }
     }
+
     //informations from https://www.bbcgoodfood.com/recipes/lamb-steaks-rosemary-sweet-potatoes
 
 let header = document.getElementById("header");
@@ -28,7 +29,14 @@ let main = document.getElementById("main");
 
 function init(){
     header.innerHTML = "<div>" + "<h1>" + "My faorate Recepes" +"</h1>" +"</div>";
-    //console.log(Recept.Title)
+    console.log( "Recept title: " + Recept.Title);
+    console.log( "Recepts Rating: " + Recept.Rating);
+    console.log( "Recepts difficulty: " + Recept.difficulty);
+    
+    for (let index = 0; index < Recept.Ingredients.length; index++) {
+        console.log( index+1 + " Recepts Ingredient: " + Recept.Ingredients[index]);
+    }
+    console.log( "Recepts servings: " + Recept.servings.fat);
 
 }window.onload = init();
 

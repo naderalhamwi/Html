@@ -2,17 +2,28 @@ class books {
     constructor(title, author, hasRead){
         this.title = title;
         this.author  = author;
-        this.hasRead  = hasRead;
+        this.hasRead  = false;
     }
 
-    greet() {
-        console.log( "title: " + this.title);
-        console.log( "author: " + this.author);
-        console.log( "hasRead: " + this.hasRead);
+    info() {
+       
+        let alltitle = prompt("skriv ib titlen av booken", "");
+        let allauthor = prompt("skriv in förfatarens namn", "");
+        var r = confirm("har du läst dnna booken?");
+        if (r == true) {
+            this.hasRead = true;
+        } else {
+            this.hasRead = false;
+            
+        }
+        if(this.hasRead == true){
+            console.log("jag har läst "  + alltitle + " av Författare " + allauthor);
+        }else{
+            console.log("jag har inte läst "  + alltitle + " av Författare " + allauthor);
+        }
     }
  
 }
 
-let book1 = new books("Learn CSS with W3Schools", "W3School.com", true);
-
-book1.greet();
+let book = new books();
+book.info();

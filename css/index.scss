@@ -28,21 +28,13 @@ section {
     }
     h1{
         opacity: 0;
-        margin: auto;
         display: flex;
         color: white;
         font-size: 150px;
-        justify-content: center;
-<<<<<<< Updated upstream
-        margin: auto;
         margin-left: 50%;
         margin-top: 5%;
-        color: white;
         font-family: "Dancing Script", cursive;
-=======
->>>>>>> Stashed changes
         text-shadow: 5px 5px 5px black;
-        font-family: "Dancing Script", cursive;
     }
     h2{
         margin: auto;
@@ -68,10 +60,7 @@ section {
     grid-template-rows: 15% auto 10%;
     div{
         width: 80%;
-<<<<<<< Updated upstream
-=======
         display: block;
->>>>>>> Stashed changes
         justify-self: center;
         background-color: black;
         transition: all 0.3s ease;
@@ -107,7 +96,6 @@ section {
             align-items: center; 
             justify-content: space-between;
             li{
-<<<<<<< Updated upstream
                 i{
                     display: inline-block;
                     top: auto;
@@ -120,7 +108,6 @@ section {
                         background-color: white;
                         color: black;
                     }
-=======
                 top: auto;
                 width: 100%;
                 margin: 10px;
@@ -131,7 +118,6 @@ section {
                 &:hover{
                     color: black;
                     background-color: white;
->>>>>>> Stashed changes
                 }
             }
         }
@@ -269,7 +255,7 @@ input[type=text], select, textarea {
     justify-content: center;
     border: none;
     }
-
+}
 @media only screen and (max-width: 850px) {
     .parent{
         .fa-chevron-down{
