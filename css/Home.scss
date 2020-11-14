@@ -1,0 +1,42 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    user-select: none;
+}
+header{
+    background-color: #C4C4C4;
+    padding: 1%;
+}
+#News{
+    border: solid 1px black;
+    width: 50%;
+    height: 300px;
+    margin: 1% auto 1% auto;
+    text-align: center;
+    h2{
+        padding: 1%;
+    }
+    &:first-child{
+        background-color: indianred;
+        box-shadow: 0px 1px 10px 0px black;
+        border: none;
+        width: auto;
+        margin: 1%;
+    }
+    &:last-child{
+        width: auto;
+        background-color: greenyellow;
+        border: none;
+        box-shadow: 0px 1px 10px 0px black;
+        margin: 1% ;
+    }
+}
+footer{
+    background-color: #C4C4C4;
+    padding: 1%;
+    text-align: center;
+    img{
+        width: 25px;
+        height: 25px;
+    }
+}
