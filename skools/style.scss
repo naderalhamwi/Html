@@ -1,0 +1,76 @@
+body, html{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.startsiad{
+    header{
+        background-color: rgb(173, 173, 173); 
+        text-align:center;
+        h1{
+            margin: auto;
+            padding: 1%;
+        }
+    }
+    
+    main{
+        text-align: center;
+        img{
+            width: 250px;
+            height: 250px;
+            background-color: white;
+        }
+        p{
+            border: solid 1px  black;
+        }
+    }
+    footer{
+        padding: 1vh;
+        text-align: center;
+    }
+}
+.sida2{
+
+}
+.sida3{
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .startsiad{
+        nav{
+            ol{
+                border: solid 1px  black;
+                text-align: center;
+                padding: 1vh;
+                margin: auto;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .startsiad{
+        nav{
+            display: flex;
+            
+            ol{
+                display: inline-block;
+                border: solid 1px  black;
+                margin: auto;
+                text-align: center;
+                width: 100vh;
+                height: 100%;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+}

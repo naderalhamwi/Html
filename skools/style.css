@@ -1,0 +1,68 @@
+body, html {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.startsiad header {
+  background-color: #adadad;
+  text-align: center;
+}
+
+.startsiad header h1 {
+  margin: auto;
+  padding: 1%;
+}
+
+.startsiad main {
+  text-align: center;
+}
+
+.startsiad main img {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+}
+
+.startsiad main p {
+  border: solid 1px  black;
+}
+
+.startsiad footer {
+  padding: 1vh;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .startsiad nav ol {
+    border: solid 1px  black;
+    text-align: center;
+    padding: 1vh;
+    margin: auto;
+  }
+  .startsiad nav ol a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .startsiad nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .startsiad nav ol {
+    display: inline-block;
+    border: solid 1px  black;
+    margin: auto;
+    text-align: center;
+    width: 100vh;
+    height: 100%;
+  }
+  .startsiad nav ol a {
+    text-decoration: none;
+    color: black;
+  }
+}
+/*# sourceMappingURL=style.css.map */
